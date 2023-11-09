@@ -28,11 +28,11 @@
     ]
     }
   ],
-  "page_action": {
+  "action": {
     "default_title": "Swimlanes for Trello"
   },
   "commands": {
-    "_execute_page_action": {
+    "_execute_action": {
       "suggested_key": {
         "default": "Ctrl+Shift+S",
         "mac": "MacCtrl+Shift+S"

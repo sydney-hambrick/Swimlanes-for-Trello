@@ -19,7 +19,7 @@
     "storage"
   ],
   "host_permissions": [ 
-    "*://trello.com/b/*",
+    "*://trello.com/b/*"
   ],
   "web_accessible_resources": [
     {

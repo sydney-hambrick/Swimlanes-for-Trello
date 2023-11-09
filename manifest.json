@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Swimlanes for Trello",
   "description": "Support arranging Trello lists into horizontal swimlanes. To start a new swimlane, just add | or a swimmer emoji to a list's header.",
   "version": "1.7",
@@ -14,12 +14,21 @@
     ]
   },
   "permissions": [
-    "*://trello.com/b/*",
     "tabs",
     "storage"
   ],
+  "host_permissions": [ 
+    "*://trello.com/b/*",
+  ],
   "web_accessible_resources": [
+    {
+      "resources": [
     "css/trello-swimlanes.css"
+      ],
+    "matches": [ 
+    "*://trello.com/b/*"
+    ]
+    }
   ],
   "page_action": {
     "default_title": "Swimlanes for Trello"

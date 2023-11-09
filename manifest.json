@@ -24,7 +24,7 @@
     "css/trello-swimlanes.css"
       ],
     "matches": [ 
-    "*://trello.com/b/*"
+    "*.trello.com/b/*"
     ]
     }
   ],

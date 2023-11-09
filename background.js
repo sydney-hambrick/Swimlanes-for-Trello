@@ -1,4 +1,4 @@
-chrome.scripting.onUpdated.addListener(function (tabId, changeInfo, tab){
+chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab){
   //only apply to Trello pages
   var regex = new RegExp(/.*:\/\/trello\.com\/b\/.*/);
   var match = regex.exec(tab.url);

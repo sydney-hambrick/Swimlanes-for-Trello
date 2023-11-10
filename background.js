@@ -5,11 +5,7 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab){
 
   //setup page for layout changes and show page action
   if (match) {
-    chrome.scripting.executeScript(null, {file: 'setup.js'});
-    chrome.action.show(tabId);
-  }
-  else {
-    chrome.action.hide(tabId);
+    chrome.scripting.executeScript(null, {file: 'setup.js'})
   }
 });
 
